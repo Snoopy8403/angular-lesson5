@@ -3,5 +3,5 @@
     {{ text | myUppercase }}
   </p>
 
-  <p *ngFor="let fruit of fruits">{{ fruit | displayFruit:heatedFruits.includes(fruit.name) | myUppercase }}</p>
+  <p *ngFor="let fruit of fruits" [appFruit]="fruit">{{ fruit | displayFruit:heatedFruits.includes(fruit.name) | myUppercase }}</p>
 </div>
